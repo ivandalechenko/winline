@@ -45,6 +45,7 @@ a:hover, button:hover {
 body {
   line-height: 1;
   background-color: #FFFFFF;
+  padding-bottom: 40px;
 }
 
 .dnone {
@@ -205,4 +206,150 @@ header .text b {
   font-size: 31.28px;
   line-height: 37px;
   color: #FFFFFF;
+}
+
+.slider {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 30px;
+  padding: 20px;
+}
+@media (max-width: 1400px) {
+  .slider {
+    justify-content: space-between;
+  }
+}
+.slider img {
+  border-radius: 20px;
+  width: 340px;
+}
+
+.steps {
+  margin-top: 40px;
+}
+.steps .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+.steps .text b {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.grade {
+  margin-top: 50px;
+}
+.grade .container {
+  display: flex;
+  justify-content: left;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.grade .container .stat {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grade .container .stat .count {
+  text-align: center;
+  font-size: 55px;
+  width: 100%;
+}
+.grade .container .stat .stars {
+  margin-top: 5px;
+}
+.grade .container .stat .dl_count {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.grade .container .lines .line_block {
+  margin-top: 8px;
+  display: flex;
+}
+.grade .container .lines .line_block .text {
+  font-size: 14px;
+  margin: auto 0;
+  width: 20px;
+}
+.grade .container .lines .line {
+  width: 300px;
+  height: 12px;
+  background-color: rgba(246, 78, 5, 0.2);
+  border-radius: 10px;
+}
+.grade .container .lines .line .inner_line {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #F64E05;
+}
+.grade .container .lines .line .five {
+  width: 100%;
+}
+.grade .container .lines .line .four {
+  width: 40%;
+}
+.grade .container .lines .line .three {
+  width: 10%;
+}
+.grade .container .lines .line .twoo {
+  width: 6%;
+}
+.grade .container .lines .line .one {
+  width: 4%;
+}
+
+.feedback {
+  margin-top: 50px;
+}
+.feedback .header b {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+.feedback .fb_element {
+  margin-top: 30px;
+}
+.feedback .fb_element .name {
+  height: 100px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.feedback .fb_element .name img {
+  height: 80px;
+  border-radius: 100px;
+  margin: auto 0;
+}
+.feedback .fb_element .name .text {
+  margin: auto 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.feedback .fb_element .stars {
+  height: 30px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.feedback .fb_element .stars .st {
+  margin: auto 0;
+}
+.feedback .fb_element .stars .date {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: auto 0;
+}
+.feedback .fb_element .fb_text {
+  font-size: 18px;
+  line-height: 25px;
 }
